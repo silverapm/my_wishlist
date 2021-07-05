@@ -3,6 +3,8 @@
 @import url(../css/bootstrap.css);
 @import url(../css/bootstrap-grid.css);
 @import url(../css/bootstrap-reboot.css);
+@import url("owl.carousel.css");
+@import url("owl.theme.default.css");
 a:hover {
   color: #e24545;
   text-decoration: none;
@@ -143,12 +145,11 @@ header ul {
     font-size: 24px;
     color: #222222;
     margin-right: 13px; }
-  .service .smallimg:before, .service .smalltext:before {
+  .service .owl-carousel:before {
     margin-top: -22px;
     margin-bottom: 22px;
-    margin-left: -10px;
     display: block;
-    width: 150%;
+    width: 100%;
     height: 2px;
     content: "";
     background-color: #ffffff; }

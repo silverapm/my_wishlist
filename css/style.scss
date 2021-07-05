@@ -3,6 +3,8 @@
 @import "../css/bootstrap.css";
 @import "../css/bootstrap-grid.css";
 @import "../css/bootstrap-reboot.css";
+@import url('owl.carousel.css');
+@import url('owl.theme.default.css');
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
@@ -212,12 +214,11 @@ header {
     margin-right: 13px;
   }
 
-  .smallimg:before, .smalltext:before {
+ .owl-carousel:before {
     margin-top: -22px;
     margin-bottom: 22px;
-    margin-left: -10px;
     display: block;
-    width: 150%;
+    width: 100%;
     height: 2px;
     content: "";
     background-color: #ffffff;
