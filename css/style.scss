@@ -15,15 +15,18 @@ a:hover {
 header {
   ul {
     list-style: none;
+
     li {
       display: inline-block;
       margin-left: 21px;
+
       a {
         color: #444444;
         font: 13px 'Montserrat';
         font-weight: 700;
         text-transform: uppercase;
       }
+
       a:after {
         margin-top: -40px;
         display: block;
@@ -33,6 +36,7 @@ header {
         background-color: transparent;
         transition: 0.3s;
       }
+
       a:hover:after {
         background-color: #e24545;
       }
@@ -46,14 +50,17 @@ header {
 
 .logoStyle {
   margin-top: 30px;
+
   h1 {
     font: 26px 'Montserrat';
     font-weight: 700;
     color: #e24545;
+
     span {
       color: #222222;
     }
   }
+
   h2 {
     font: 12px 'Montserrat';
     font-weight: 700;
@@ -68,6 +75,7 @@ header {
   background-image: url("../images/bgwishlogo.jpg");
   width: 100%;
   background-color: #f8f8f8;
+
   .heightSize {
     height: 150px;
   }
@@ -79,10 +87,13 @@ header {
     text-transform: uppercase;
     margin-top: 60px;
   }
+
   ul {
     margin-top: 62px;
+
     li {
       display: inline-block;
+
       a {
         text-decoration: none;
         text-transform: uppercase;
@@ -92,8 +103,77 @@ header {
         letter-spacing: 1px;
       }
     }
+
     li:last-child a {
       color: #888888;
     }
+  }
+
+  margin-bottom: 128px;
+}
+
+.mainblock {
+  .phoneblock {
+    padding-top: 30px;
+    border: solid 1px #eeeeee;
+    margin-bottom: 50px;
+  }
+
+  .phoneblock:hover {
+    background-color: #f6f6f6;
+  }
+
+  .imgbox {
+    margin: auto;
+    width: 144px;
+    height: 184px;
+  }
+
+  .imgbox:after {
+    margin-top: 38px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 10px;
+    height: 2px;
+    content: "";
+    background-color: #e24545;
+  }
+
+  h4 {
+    margin-top: 62px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+    color: #222222;
+    font: 14px 'Montserrat';
+    font-weight: 700;
+  }
+
+  h5 {
+    margin-bottom: 25px;
+    color: #e24545;
+    font: 16px 'Montserrat';
+    font-weight: 700;
+  }
+
+  a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    color: #222222;
+    border: solid 1px #eeeeee;
+    padding: 9px;
+  }
+  a:last-child {
+    margin-left: -6px;
+  }
+  a:first-child {
+    margin-right: -6px;
+  }
+  a:hover {
+    color: white;
+    background-color: #e24545;
+    border: none;
   }
 }

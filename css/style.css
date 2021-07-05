@@ -51,7 +51,8 @@ header ul {
 .wishlist {
   background-image: url("../images/bgwishlogo.jpg");
   width: 100%;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  margin-bottom: 128px; }
   .wishlist .heightSize {
     height: 150px; }
   .wishlist h3 {
@@ -73,5 +74,53 @@ header ul {
         letter-spacing: 1px; }
     .wishlist ul li:last-child a {
       color: #888888; }
+
+.mainblock .phoneblock {
+  padding-top: 30px;
+  border: solid 1px #eeeeee;
+  margin-bottom: 50px; }
+.mainblock .phoneblock:hover {
+  background-color: #f6f6f6; }
+.mainblock .imgbox {
+  margin: auto;
+  width: 144px;
+  height: 184px; }
+.mainblock .imgbox:after {
+  margin-top: 38px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 10px;
+  height: 2px;
+  content: "";
+  background-color: #e24545; }
+.mainblock h4 {
+  margin-top: 62px;
+  margin-bottom: 13px;
+  text-transform: uppercase;
+  color: #222222;
+  font: 14px 'Montserrat';
+  font-weight: 700; }
+.mainblock h5 {
+  margin-bottom: 25px;
+  color: #e24545;
+  font: 16px 'Montserrat';
+  font-weight: 700; }
+.mainblock a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  color: #222222;
+  border: solid 1px #eeeeee;
+  padding: 9px; }
+.mainblock a:last-child {
+  margin-left: -6px; }
+.mainblock a:first-child {
+  margin-right: -6px; }
+.mainblock a:hover {
+  color: white;
+  background-color: #e24545;
+  border: none; }
 
 /*# sourceMappingURL=style.css.map */
