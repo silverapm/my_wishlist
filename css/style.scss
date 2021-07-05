@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('../web-fonts-with-css/css/fontawesome-all.css');
+@import "../css/bootstrap.css";
+@import "../css/bootstrap-grid.css";
+@import "../css/bootstrap-reboot.css";
+
+
+a:hover {
+  color: #e24545;
+  text-decoration: none;
+  border: none;
+}
+
+
+header {
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-left: 21px;
+      a {
+        color: #444444;
+        font: 13px 'Montserrat';
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      a:after {
+        margin-top: -40px;
+        display: block;
+        width: 10px;
+        height: 2px;
+        content: "";
+        background-color: transparent;
+        transition: 0.3s;
+      }
+      a:hover:after {
+        background-color: #e24545;
+      }
+    }
+  }
+}
+
+.verticalCenter {
+  line-height: 7em;
+}
+
+.logoStyle {
+  margin-top: 30px;
+  h1 {
+    font: 26px 'Montserrat';
+    font-weight: 700;
+    color: #e24545;
+    span {
+      color: #222222;
+    }
+  }
+  h2 {
+    font: 12px 'Montserrat';
+    font-weight: 700;
+    color: #444444;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    margin-top: -8px;
+  }
+}
+
+.wishlist {
+  background-image: url("../images/bgwishlogo.jpg");
+  width: 100%;
+  background-color: #f8f8f8;
+  .heightSize {
+    height: 150px;
+  }
+
+  h3 {
+    font: 26px 'Montserrat';
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    margin-top: 60px;
+  }
+  ul {
+    margin-top: 62px;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #444444;
+        font: 12px 'Montserrat';
+        font-weight: 400;
+        letter-spacing: 1px;
+      }
+    }
+    li:last-child a {
+      color: #888888;
+    }
+  }
+}
