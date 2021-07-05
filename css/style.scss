@@ -154,6 +154,21 @@ header {
     color: #e24545;
     font: 16px 'Montserrat';
     font-weight: 700;
+    span {
+      color: #888888;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    span:after {
+      margin-top: -10px;
+      margin-bottom: 10px;
+      display: block;
+      width: 25%;
+      height: 1px;
+      content: "";
+      background-color: #888888;
+      margin-left: 134px;
+    }
   }
 
   a {
@@ -174,6 +189,6 @@ header {
   a:hover {
     color: white;
     background-color: #e24545;
-    border: none;
+    border: solid 1px transparent;
   }
 }
