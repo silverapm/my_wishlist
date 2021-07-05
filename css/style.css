@@ -202,6 +202,9 @@ header ul {
     border: solid 1px #eeeeee;
     padding: 12px;
     text-align: center; }
+    @media screen and (max-width: 1200px) {
+      .prefooter a {
+        margin-top: 10px; } }
   .prefooter a:hover {
     color: white;
     background-color: #e24545; }
@@ -217,6 +220,9 @@ footer {
     footer p span {
       color: #444444; }
   footer a {
-    margin-right: 10px; }
+    margin-right: 5px; }
+    @media screen and (max-width: 996px) {
+      footer a img {
+        margin-top: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
