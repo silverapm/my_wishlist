@@ -54,7 +54,7 @@ header ul {
   background-image: url("../images/bgwishlogo.jpg");
   width: 100%;
   background-color: #f8f8f8;
-  margin-bottom: 128px; }
+  margin-bottom: 50px; }
   .wishlist .heightSize {
     height: 150px; }
   .wishlist h3 {
@@ -225,5 +225,17 @@ footer {
     @media screen and (max-width: 996px) {
       footer a img {
         margin-top: 10px; } }
+
+.btndefault {
+  border-radius: 0;
+  border: solid 2px #444444;
+  background-color: white;
+  width: 120px;
+  height: 48px;
+  color: #444444;
+  font: 12px 'Montserrat';
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */
