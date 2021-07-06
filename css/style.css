@@ -238,4 +238,8 @@ footer {
   text-transform: uppercase;
   margin-bottom: 40px; }
 
+.btndefault:hover {
+  background-color: #e24545;
+  border-color: #e24545; }
+
 /*# sourceMappingURL=style.css.map */
