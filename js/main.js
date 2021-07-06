@@ -98,6 +98,46 @@ document.getElementById('removebtn7').onclick = function()
     document.getElementsByClassName('bigphoneblock')[7].style= "display: none";
 }
 
+document.getElementById('removeAbtn0').onclick = function()
+{
+    document.getElementsByClassName('bigphoneblock')[0].style= "display: none";
+}
+
+document.getElementById('removeAbtn1').onclick = function()
+{
+    document.getElementsByClassName('bigphoneblock')[1].style= "display: none";
+}
+
+document.getElementById('removeAbtn2').onclick = function()
+{
+    document.getElementsByClassName('bigphoneblock')[2].style= "display: none";
+}
+
+document.getElementById('removeAbtn3').onclick = function()
+{
+    document.getElementsByClassName('bigphoneblock')[3].style= "display: none";
+}
+
+document.getElementById('removeAbtn4').onclick = function()
+{
+    document.getElementsByClassName('bigphoneblock')[4].style= "display: none";
+}
+
+document.getElementById('removeAbtn5').onclick = function()
+{
+    document.getElementsByClassName('bigphoneblock')[5].style= "display: none";
+}
+
+document.getElementById('removeAbtn6').onclick = function()
+{
+    document.getElementsByClassName('bigphoneblock')[6].style= "display: none";
+}
+
+document.getElementById('removeAbtn7').onclick = function()
+{
+    document.getElementsByClassName('bigphoneblock')[7].style= "display: none";
+}
+
 
 
 
