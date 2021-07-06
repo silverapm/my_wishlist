@@ -158,6 +158,24 @@ header ul {
   .mainblock .removeblock:hover .btndefault {
     color: white;
     border: solid 2px white; }
+.mainblock .pagebtn {
+  color: #888888;
+  text-align: center;
+  display: inline-block;
+  background-color: transparent;
+  border: solid 2px #dddddd;
+  border-radius: 0;
+  width: 35px;
+  height: 35px;
+  margin-top: 30px;
+  margin-right: 8px;
+  font: 12px 'Montserrat';
+  font-weight: 400;
+  padding: 5px; }
+.mainblock .pagebtn:hover {
+  border-color: #444444;
+  color: #e24545;
+  font-weight: 700; }
 
 .service {
   margin-top: 100px;
