@@ -80,7 +80,8 @@ header ul {
 .mainblock .phoneblock {
   padding-top: 30px;
   border: solid 1px #eeeeee;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
 .mainblock .phoneblock:hover {
   background-color: #f6f6f6; }
 .mainblock .imgbox {
@@ -137,6 +138,26 @@ header ul {
   color: white;
   background-color: #e24545;
   border: solid 1px transparent; }
+.mainblock .removeblock {
+  position: absolute;
+  width: 254px;
+  height: 262px;
+  z-index: 2;
+  top: 0; }
+  .mainblock .removeblock .btndefault {
+    color: transparent;
+    background-color: transparent;
+    border: solid 2px transparent;
+    width: 170px;
+    height: 40px;
+    z-index: 3;
+    margin-top: 110px; }
+.mainblock .removeblock:hover {
+  background-color: rgba(49, 49, 49, 0.6);
+  transition: 0.3s; }
+  .mainblock .removeblock:hover .btndefault {
+    color: white;
+    border: solid 2px white; }
 
 .service {
   margin-top: 100px;

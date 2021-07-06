@@ -123,6 +123,7 @@ header {
     padding-top: 30px;
     border: solid 1px #eeeeee;
     margin-bottom: 50px;
+    position: relative;
   }
 
   .phoneblock:hover {
@@ -201,6 +202,30 @@ header {
     color: white;
     background-color: #e24545;
     border: solid 1px transparent;
+  }
+  .removeblock {
+    position: absolute;
+    width: 254px;
+    height: 262px;
+    z-index: 2;
+    top: 0;
+    .btndefault {
+      color: transparent;
+      background-color: transparent;
+      border: solid 2px transparent;
+      width: 170px;
+      height: 40px;
+      z-index: 3;
+      margin-top: 110px;
+    }
+  }
+  .removeblock:hover {
+    background-color: rgba(49, 49, 49, 0.6);
+    transition: 0.3s;
+    .btndefault {
+      color: white;
+      border: solid 2px white;
+    }
   }
 }
 
@@ -340,3 +365,4 @@ footer {
   background-color: #e24545;
   border-color: #e24545;
 }
+
