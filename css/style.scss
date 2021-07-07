@@ -387,3 +387,6 @@ footer {
   border-color: #e24545;
 }
 
+input:invalid {
+  border-color: red;
+}

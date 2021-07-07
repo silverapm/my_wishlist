@@ -281,4 +281,7 @@ footer {
   background-color: #e24545;
   border-color: #e24545; }
 
+input:invalid {
+  border-color: red; }
+
 /*# sourceMappingURL=style.css.map */

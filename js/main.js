@@ -99,7 +99,7 @@ function setStyleByClassName(className, style, index) {
 }
 
 function search() {
-    const searchField = document.getElementById("mySearch");
+    const searchField = document.getElementById("inputSearch");
     const filter = searchField.value.toUpperCase();
     const elements = document.getElementsByClassName("bigphoneblock");
 
@@ -112,6 +112,4 @@ function search() {
         }
     }
 }
-
-
 

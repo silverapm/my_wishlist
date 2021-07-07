@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row">
             <div class="offset-8 col-2">
-                <input type="text" id="mySearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
+                <input type="text" id="inputSearch" onkeyup="search()" placeholder="Search.." title="Type in a category">
             </div>
             <div class="col-2 text-right">
                 <button type="button" class="btn btn-primary btndefault" id="button1">Clear list</button>
@@ -222,9 +222,8 @@
                     news & great deals we offer
                 </p>
             </div>
-            <div class="input-group col-xl-5">
-                <input type="text" class="form-control" placeholder="enter your email adress..." aria-label="Username"
-                       aria-describedby="basic-addon1">
+            <div class="form-group col-xl-5">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
             </div>
             <div class="col-xl-4">
                 <a href="#"><i class="fab fa-twitter"></i></a>
