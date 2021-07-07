@@ -2,22 +2,6 @@ document.getElementById('button1').onclick = function () {
     setStyleByClassName('bigphoneblock', 'display: none');
 }
 
-document.getElementById('pagebtn1').onclick = function () {
-    setStyleByClassName('bigphoneblock', 'display: block');
-}
-
-document.getElementById('pagebtn2').onclick = function () {
-    setStyleByClassName('bigphoneblock', 'display: block');
-}
-
-document.getElementById('pagebtn3').onclick = function () {
-    setStyleByClassName('bigphoneblock', 'display: block');
-}
-
-document.getElementById('pagebtn4').onclick = function () {
-    setStyleByClassName('bigphoneblock', 'display: block');
-}
-
 document.getElementById('removebtn0').onclick = function () {
     setStyleByClassName('bigphoneblock', 'display: none', 0);
 }
@@ -82,6 +66,9 @@ document.getElementById('removeAbtn7').onclick = function () {
     setStyleByClassName('bigphoneblock', 'display: none', 7);
 }
 
+let searchResults = null;
+const pageSize = 8;
+
 function setStyleByClassName(className, style, index) {
     const elements = document.getElementsByClassName(className);
 
@@ -91,55 +78,75 @@ function setStyleByClassName(className, style, index) {
         return;
     }
 
-    for (let i = 0; i <= elements.length; i++) {
+    for (let i = 0; i < elements.length; i++) {
         elements[i].style = style;
     }
 }
 
 function search() {
-    const searchField = document.getElementById("inputSearch");
+    const searchField = document.getElementById('inputSearch');
     const filter = searchField.value.toUpperCase();
-    const elements = document.getElementsByClassName("bigphoneblock");
 
-    for (let i = 0; i < elements.length; i++) {
-        const title = elements[i].getElementsByTagName("h4")[0];
-        if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            elements[i].style.display = "";
-        } else {
-            elements[i].style.display = "none";
+    if (filter === '') {
+        searchResults = null;
+    } else {
+        searchResults = [];
+        const elements = document.getElementsByClassName('bigphoneblock');
+
+        for (let i = 0; i < elements.length; i++) {
+            const title = elements[i].getElementsByTagName('h4')[0];
+            if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                searchResults.push(elements[i]);
+            } else {
+                elements[i].style.display = 'none';
+            }
         }
     }
+    paginate(0);
+    generatePagination();
 }
 
 (function () {
     window.addEventListener('load', function () {
         let forms = document.getElementsByClassName('needs-validation');
-        let validation = Array.prototype.filter.call(forms, function (form) {
+        Array.prototype.filter.call(forms, function (form) {
             form.addEventListener('submit', function (event) {
+                form.classList.add('was-validated');
 
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
                 }
-
-                let email = $("#email").val();
-                let confirmemail = $("#confirm_email").val();
-
-                if (email !== confirmemail) {
-                    form.classList.add('was-validated');
-                    $("#validate").html("Email Should Match");
-                    $("#validate").addClass("error");
-                    $("#confirm_email").addClass("error-text");
-                    event.preventDefault();
-                    event.stopPropagation();
-                } else {
-                    $("#validate").removeClass("error");
-                    form.classList.add('was-validated');
-                    $("#confirm_email").removeClass("error-text");
-                    $("#validate").html("Looks Good!");
-                }
-
             }, false);
         });
+        paginate(0);
+        generatePagination();
     }, false);
 })();
+
+function paginate(page) {
+    let style;
+    const elements = searchResults||document.getElementsByClassName('bigphoneblock');
+
+    for (let i = 0; i < elements.length; i++) {
+        if (page*pageSize <= i && i < page*pageSize+pageSize) {
+            style = 'display: block';
+        } else {
+            style = 'display: none';
+        }
+        elements[i].style=style;
+    }
+}
+
+function generatePagination () {
+    const elements = searchResults||document.getElementsByClassName('bigphoneblock');
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
+
+    for (let i = 0; i < Math.ceil(elements.length/pageSize); i++) {
+        pagination.innerHTML += '<button type="button" class="btn btn-secondary btn-lg pagebtn" id="pagebtn'+i+'">'+(i+1)+'</button>';
+        document.getElementById('pagebtn'+i).onclick = function () {
+            paginate(i);
+        }
+    }
+}
