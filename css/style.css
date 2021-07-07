@@ -281,7 +281,10 @@ footer {
   background-color: #e24545;
   border-color: #e24545; }
 
-input:invalid {
-  border-color: red; }
+.error {
+  color: red !important; }
+
+.error-text {
+  border: 1px solid red !important; }
 
 /*# sourceMappingURL=style.css.map */

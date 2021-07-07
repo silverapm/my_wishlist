@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -222,8 +222,13 @@
                     news & great deals we offer
                 </p>
             </div>
-            <div class="form-group col-xl-5">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+            <div class="col-xl-5 form-group">
+                <form class="needs-validation" novalidate>
+                            <input type="Email" class="form-control" id="email" placeholder="example@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                </form>
             </div>
             <div class="col-xl-4">
                 <a href="#"><i class="fab fa-twitter"></i></a>

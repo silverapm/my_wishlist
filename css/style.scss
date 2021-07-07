@@ -203,12 +203,14 @@ header {
     background-color: #e24545;
     border: solid 1px transparent;
   }
+
   .removeblock {
     position: absolute;
     width: 254px;
     height: 262px;
     z-index: 2;
     top: 0;
+
     .btndefault {
       color: transparent;
       background-color: transparent;
@@ -219,14 +221,17 @@ header {
       margin-top: 110px;
     }
   }
+
   .removeblock:hover {
     background-color: rgba(49, 49, 49, 0.6);
     transition: 0.3s;
+
     .btndefault {
       color: white;
       border: solid 2px white;
     }
   }
+
   .pagebtn {
     color: #888888;
     text-align: center;
@@ -260,7 +265,7 @@ header {
     margin-right: 13px;
   }
 
- .owl-carousel:before {
+  .owl-carousel:before {
     margin-top: -22px;
     margin-bottom: 22px;
     display: block;
@@ -361,6 +366,7 @@ footer {
 
   a {
     margin-right: 5px;
+
     img {
       @include max-screen(996px) {
         margin-top: 10px;
@@ -387,6 +393,10 @@ footer {
   border-color: #e24545;
 }
 
-input:invalid {
-  border-color: red;
+.error {
+  color: red !important;
+}
+
+.error-text {
+  border: 1px solid red !important;
 }

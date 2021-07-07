@@ -1,5 +1,3 @@
-
-
 document.getElementById('button1').onclick = function () {
     setStyleByClassName('bigphoneblock', 'display: none');
 }
@@ -113,3 +111,35 @@ function search() {
     }
 }
 
+(function () {
+    window.addEventListener('load', function () {
+        let forms = document.getElementsByClassName('needs-validation');
+        let validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                let email = $("#email").val();
+                let confirmemail = $("#confirm_email").val();
+
+                if (email !== confirmemail) {
+                    form.classList.add('was-validated');
+                    $("#validate").html("Email Should Match");
+                    $("#validate").addClass("error");
+                    $("#confirm_email").addClass("error-text");
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    $("#validate").removeClass("error");
+                    form.classList.add('was-validated');
+                    $("#confirm_email").removeClass("error-text");
+                    $("#validate").html("Looks Good!");
+                }
+
+            }, false);
+        });
+    }, false);
+})();
