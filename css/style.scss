@@ -52,8 +52,11 @@ header {
     height: 44px;
     border: solid 2px #444444;
     margin-top: 30px;
-    @include max-screen(767px) {
+    @include max-screen(1199px) {
       margin-top: 0;
+    }
+    @include max-screen(767px) {
+      margin-top: 10px;
     }
     p {
       color: #444444;

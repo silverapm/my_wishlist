@@ -138,6 +138,7 @@ function paginate(page) {
     }
 }
 
+
 function generatePagination () {
     const elements = searchResults||document.getElementsByClassName('bigphoneblock');
     const pagination = document.getElementById('pagination');
@@ -145,8 +146,17 @@ function generatePagination () {
 
     for (let i = 0; i < Math.ceil(elements.length/pageSize); i++) {
         pagination.innerHTML += '<button type="button" class="btn btn-secondary btn-lg pagebtn" id="pagebtn'+i+'">'+(i+1)+'</button>';
+        let item = document.getElementById('pagebtn'+i);
+        /*
+        document.getElementById('pagebtn'+i).onclick = function () {
+            paginate(i);
+        }
+         */
+    }
+    for (let i = 0; i < elements.length; i++) {
         document.getElementById('pagebtn'+i).onclick = function () {
             paginate(i);
         }
     }
 }
+

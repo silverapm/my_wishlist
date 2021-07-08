@@ -35,9 +35,12 @@ header .basketblock {
   height: 44px;
   border: solid 2px #444444;
   margin-top: 30px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     header .basketblock {
       margin-top: 0; } }
+  @media screen and (max-width: 767px) {
+    header .basketblock {
+      margin-top: 10px; } }
   header .basketblock p {
     color: #444444;
     font: 15px/40px 'Montserrat';
