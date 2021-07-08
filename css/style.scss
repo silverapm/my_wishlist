@@ -21,7 +21,6 @@ a:hover {
 header {
   ul {
     list-style: none;
-
     li {
       display: inline-block;
       margin-left: 21px;
@@ -53,6 +52,9 @@ header {
     height: 44px;
     border: solid 2px #444444;
     margin-top: 30px;
+    @include max-screen(767px) {
+      margin-top: 0;
+    }
     p {
       color: #444444;
       font: 15px/40px 'Montserrat';
@@ -74,6 +76,11 @@ header {
       z-index: 3;
       border: solid 5px white;
     }
+    @include max-screen(1199px) {
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .basketblock:after {
     display: block;
@@ -83,15 +90,30 @@ header {
     margin-left: 134px;
     margin-top: -89px;
     font-size: 13px;
+    @include max-screen(1199px) {
+      margin-top: -65px;
+    }
+    @include max-screen(767px) {
+      margin-top: -49px;
+    }
   }
 }
 
 .verticalCenter {
   line-height: 7em;
+  @include max-screen(1199px) {
+    line-height: 4em;
+  }
+  @include max-screen(767px) {
+    line-height: 2em;
+  }
 }
 
 .logoStyle {
   margin-top: 30px;
+  @include max-screen(767px) {
+    margin-bottom: 30px;
+  }
 
   h1 {
     font: 26px 'Montserrat';
@@ -242,7 +264,7 @@ header {
     padding-left: 20px;
   }
 
-  button {
+  .phoneblock button {
     background-color: transparent;
     display: inline-block;
     width: 40px;
@@ -253,7 +275,7 @@ header {
     padding: 9px;
   }
 
-  button:hover {
+  .phoneblock button:hover {
     color: white;
     background-color: #e24545;
     border: solid 1px transparent;
@@ -279,16 +301,6 @@ header {
     }
   }
 
-  .removeblock:hover {
-    background-color: rgba(49, 49, 49, 0.6);
-    transition: 0.3s;
-
-    .btndefault {
-      color: white;
-      border: solid 2px white;
-    }
-  }
-
   .pagebtn {
     color: #888888;
     text-align: center;
@@ -300,7 +312,7 @@ header {
     height: 35px;
     margin-top: 30px;
     margin-right: 8px;
-    font: 12px 'Montserrat';
+    font: 12px 'Montserrat'!important;
     font-weight: 400;
     padding: 5px;
   }
@@ -308,7 +320,18 @@ header {
   .pagebtn:hover {
     border-color: #444444;
     color: #e24545;
-    font-weight: 700;
+    font: 14px 'Montserrat'!important;
+    font-weight: 700!important;
+  }
+
+  .removeblock:hover {
+    background-color: rgba(49, 49, 49, 0.6);
+    transition: 0.3s;
+
+    .btndefault {
+      color: white;
+      border: solid 2px white;
+    }
   }
 }
 
@@ -390,6 +413,11 @@ header {
     display: inline-block;
     width: 50px;
     height: 50px;
+    @include max-screen(364px) {
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+    }
     font-size: 14px;
     color: #999999;
     border: solid 1px #eeeeee;
@@ -428,6 +456,9 @@ footer {
       @include max-screen(996px) {
         margin-top: 10px;
       }
+      @include max-screen(364px) {
+        width: 13%;
+      }
     }
   }
 }
@@ -457,3 +488,4 @@ footer {
 .error-text {
   border: 1px solid red !important;
 }
+

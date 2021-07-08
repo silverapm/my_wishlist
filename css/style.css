@@ -35,6 +35,9 @@ header .basketblock {
   height: 44px;
   border: solid 2px #444444;
   margin-top: 30px; }
+  @media screen and (max-width: 767px) {
+    header .basketblock {
+      margin-top: 0; } }
   header .basketblock p {
     color: #444444;
     font: 15px/40px 'Montserrat';
@@ -53,6 +56,11 @@ header .basketblock {
     margin-top: -36px;
     z-index: 3;
     border: solid 5px white; }
+  @media screen and (max-width: 1199px) {
+    header .basketblock {
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto; } }
 header .basketblock:after {
   display: block;
   color: white;
@@ -61,12 +69,27 @@ header .basketblock:after {
   margin-left: 134px;
   margin-top: -89px;
   font-size: 13px; }
+  @media screen and (max-width: 1199px) {
+    header .basketblock:after {
+      margin-top: -65px; } }
+  @media screen and (max-width: 767px) {
+    header .basketblock:after {
+      margin-top: -49px; } }
 
 .verticalCenter {
   line-height: 7em; }
+  @media screen and (max-width: 1199px) {
+    .verticalCenter {
+      line-height: 4em; } }
+  @media screen and (max-width: 767px) {
+    .verticalCenter {
+      line-height: 2em; } }
 
 .logoStyle {
   margin-top: 30px; }
+  @media screen and (max-width: 767px) {
+    .logoStyle {
+      margin-bottom: 30px; } }
   .logoStyle h1 {
     font: 26px 'Montserrat';
     font-weight: 700;
@@ -175,7 +198,7 @@ header .basketblock:after {
   border: solid 2px #444444;
   margin-bottom: 40px;
   padding-left: 20px; }
-.mainblock button {
+.mainblock .phoneblock button {
   background-color: transparent;
   display: inline-block;
   width: 40px;
@@ -184,7 +207,7 @@ header .basketblock:after {
   color: #222222;
   border: solid 1px #eeeeee;
   padding: 9px; }
-.mainblock button:hover {
+.mainblock .phoneblock button:hover {
   color: white;
   background-color: #e24545;
   border: solid 1px transparent; }
@@ -204,12 +227,6 @@ header .basketblock:after {
     margin-top: 110px;
     font: 12px 'Montserrat';
     font-weight: 400; }
-.mainblock .removeblock:hover {
-  background-color: rgba(49, 49, 49, 0.6);
-  transition: 0.3s; }
-  .mainblock .removeblock:hover .btndefault {
-    color: white;
-    border: solid 2px white; }
 .mainblock .pagebtn {
   color: #888888;
   text-align: center;
@@ -221,13 +238,20 @@ header .basketblock:after {
   height: 35px;
   margin-top: 30px;
   margin-right: 8px;
-  font: 12px 'Montserrat';
+  font: 12px "Montserrat" !important;
   font-weight: 400;
   padding: 5px; }
 .mainblock .pagebtn:hover {
   border-color: #444444;
   color: #e24545;
-  font-weight: 700; }
+  font: 14px "Montserrat" !important;
+  font-weight: 700 !important; }
+.mainblock .removeblock:hover {
+  background-color: rgba(49, 49, 49, 0.6);
+  transition: 0.3s; }
+  .mainblock .removeblock:hover .btndefault {
+    color: white;
+    border: solid 2px white; }
 
 .service {
   margin-top: 100px;
@@ -294,6 +318,11 @@ header .basketblock:after {
     border: solid 1px #eeeeee;
     padding: 12px;
     text-align: center; }
+    @media screen and (max-width: 364px) {
+      .prefooter a {
+        width: 40px;
+        height: 40px;
+        padding: 8px; } }
     @media screen and (max-width: 1200px) {
       .prefooter a {
         margin-top: 10px; } }
@@ -316,6 +345,9 @@ footer {
     @media screen and (max-width: 996px) {
       footer a img {
         margin-top: 10px; } }
+    @media screen and (max-width: 364px) {
+      footer a img {
+        width: 13%; } }
 
 .btndefault {
   border-radius: 0;
