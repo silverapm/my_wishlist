@@ -137,6 +137,9 @@ header .basketblock:after {
     .wishlist ul li:last-child a {
       color: #888888; }
 
+.mainblock .bigphoneblock {
+  max-width: 280px;
+  margin: auto; }
 .mainblock .phoneblock {
   padding-top: 30px;
   border: solid 1px #eeeeee;
@@ -182,6 +185,12 @@ header .basketblock:after {
     content: "";
     background-color: #888888;
     margin-left: 134px; }
+    @media screen and (max-width: 1200px) {
+      .mainblock h5 span:after {
+        margin-left: 131px; } }
+    @media screen and (max-width: 991px) {
+      .mainblock h5 span:after {
+        margin-left: 131px; } }
 .mainblock .clearbtn {
   width: 120px;
   height: 38px;
@@ -332,7 +341,7 @@ header .basketblock:after {
         width: 40px;
         height: 40px;
         padding: 8px; } }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
       .prefooter a {
         margin-top: 10px; } }
   .prefooter a:hover {

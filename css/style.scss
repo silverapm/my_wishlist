@@ -185,6 +185,11 @@ header {
 }
 
 .mainblock {
+  .bigphoneblock{
+    max-width: 280px;
+    margin: auto;
+  }
+
   .phoneblock {
     padding-top: 30px;
     border: solid 1px #eeeeee;
@@ -243,6 +248,12 @@ header {
       content: "";
       background-color: #888888;
       margin-left: 134px;
+      @include max-screen(1200px) {
+        margin-left: 131px;
+      }
+      @include max-screen(991px) {
+        margin-left: 131px;
+      }
     }
   }
 
@@ -437,7 +448,7 @@ header {
     border: solid 1px #eeeeee;
     padding: 12px;
     text-align: center;
-    @include max-screen(1200px) {
+    @include max-screen(1199px) {
       margin-top: 10px;
     }
   }
