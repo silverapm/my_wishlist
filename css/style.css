@@ -112,6 +112,9 @@ header .basketblock:after {
   width: 100%;
   background-color: #f8f8f8;
   margin-bottom: 50px; }
+  .wishlist .fa-chevron-right:before {
+    margin: 0 5px;
+    font-size: 11px; }
   .wishlist .heightSize {
     height: 150px; }
   .wishlist h3 {
@@ -230,6 +233,9 @@ header .basketblock:after {
     margin-top: 110px;
     font: 12px 'Montserrat';
     font-weight: 400; }
+  .mainblock .removeblock .btndefault:hover {
+    background-color: transparent;
+    border: solid 2px transparent; }
 .mainblock .pagebtn {
   color: #888888;
   text-align: center;

@@ -143,6 +143,11 @@ header {
   width: 100%;
   background-color: #f8f8f8;
 
+  .fa-chevron-right:before {
+    margin: 0 5px;
+    font-size: 11px;
+  }
+
   .heightSize {
     height: 150px;
   }
@@ -302,6 +307,12 @@ header {
       font: 12px 'Montserrat';
       font-weight: 400;
     }
+
+    .btndefault:hover {
+      background-color: transparent;
+      border: solid 2px transparent;
+    }
+
   }
 
   .pagebtn {

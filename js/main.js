@@ -1,6 +1,3 @@
-document.getElementById('button1').onclick = function () {
-    setStyleByClassName('bigphoneblock', 'display: none');
-}
 
 document.getElementById('removebtn0').onclick = function () {
     setStyleByClassName('bigphoneblock', 'display: none', 0);
@@ -159,4 +156,14 @@ function generatePagination () {
         }
     }
 }
+
+document.getElementById('clearlistbtn').onclick = function () {
+    setStyleByClassName('bigphoneblock', 'display: none');
+    searchResults = [];
+    paginate(0);
+    generatePagination();
+    document.getElementById("clearlistbtn").disabled = true;
+    document.getElementById("inputSearch").disabled = true;
+}
+
 
