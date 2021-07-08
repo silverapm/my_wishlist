@@ -380,4 +380,7 @@ footer {
 .error-text {
   border: 1px solid red !important; }
 
+.deleted {
+  display: none !important; }
+
 /*# sourceMappingURL=style.css.map */
